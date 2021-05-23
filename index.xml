@@ -6,7 +6,430 @@
         <description>Recent content on KJ Murmur 喃語</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Thu, 20 May 2021 08:50:29 +0800</lastBuildDate><atom:link href="https://murmur.kejyun.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 22 May 2021 08:50:29 +0800</lastBuildDate><atom:link href="https://murmur.kejyun.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>從 GoDaddy 轉移網址到 Google Domains</title>
+        <link>https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/</link>
+        <pubDate>Sat, 22 May 2021 08:50:29 +0800</pubDate>
+        
+        <guid>https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/</guid>
+        <description>&lt;img src="https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/cover.png" alt="Featured image of post 從 GoDaddy 轉移網址到 Google Domains" /&gt;&lt;h2 id=&#34;godaddy-網址與-google-domains-費用比較&#34;&gt;GoDaddy 網址與 Google Domains 費用比較&lt;/h2&gt;
+&lt;p&gt;使用 GoDaddy 買網址已經用了快 10 年了，雖然介面操作 GoDaddy 有持續的在改善，但 GoDaddy 在網址的續約及隱私權保護的費用真的是高，在 GoDaddy 的網址價格如果你購買 2 年以上，第一年會有優惠折扣只需要 &lt;code&gt;NT$98&lt;/code&gt;，但第二年之後收費是 &lt;code&gt;NT$554&lt;/code&gt;，所以兩年總共 &lt;code&gt;NT$652&lt;/code&gt; 平均每年是 &lt;code&gt;NT$326&lt;/code&gt;，但若只購買一年的話，在 GoDaddy 的網址費用就變成 &lt;code&gt;NT$373&lt;/code&gt; 了&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2 年期的費用我用計算機算起來是 &lt;code&gt;NT$652&lt;/code&gt; 但他結帳是 &lt;code&gt;NT$685&lt;/code&gt; ???&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 169; flex-basis: 407px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-buy-price-1.png&#34; data-size=&#34;824x485&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-buy-price-1.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-buy-price-1_hua5121d0f056f53d843c7815d01ad0885_73250_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-buy-price-1_hua5121d0f056f53d843c7815d01ad0885_73250_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;824&#34;
+				height=&#34;485&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;GoDaddy 購買網域價格&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;GoDaddy 購買網域價格&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 169; flex-basis: 407px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-buy-price-2.png&#34; data-size=&#34;824x485&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-buy-price-2.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-buy-price-2_huc1852000180b8e3136fe3c4c5b06e173_66496_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-buy-price-2_huc1852000180b8e3136fe3c4c5b06e173_66496_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;824&#34;
+				height=&#34;485&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;GoDaddy 購買網域價格&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;GoDaddy 購買網域價格&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;而在 Google Domains 購買網址的話，固定每年是 &lt;code&gt;$12&lt;/code&gt; 美元，若以匯率 &lt;code&gt;1:30&lt;/code&gt; 來算的話，約為 &lt;code&gt;NT$360&lt;/code&gt;，比 GoDaddy 一次購買 2 年期的平均每年 &lt;code&gt;NT$326&lt;/code&gt; 略高 &lt;code&gt;NT$34&lt;/code&gt;，但在第 3 年續約價格就會跳漲到 &lt;code&gt;NT$554&lt;/code&gt;，足足比 Google Domains 貴了 &lt;code&gt;NT$194&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 401; flex-basis: 963px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-buy-price-1.png&#34; data-size=&#34;839x209&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-buy-price-1.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-buy-price-1_huc847d2318e8ea75ba1df41a15e857b7b_32959_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-buy-price-1_huc847d2318e8ea75ba1df41a15e857b7b_32959_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;839&#34;
+				height=&#34;209&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Google 購買網域價格&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Google 購買網域價格&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 139; flex-basis: 335px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-buy-price-2.png&#34; data-size=&#34;622x445&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-buy-price-2.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-buy-price-2_hu09ec30400525fa403d41afbca1b87913_94461_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-buy-price-2_hu09ec30400525fa403d41afbca1b87913_94461_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;622&#34;
+				height=&#34;445&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Google 購買網域價格&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Google 購買網域價格&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;為了省錢若不嫌麻煩的話可以前 2 年的網址在 GoDaddy 購買，而第 3 年後移轉到 Google Domain，或者避免到時 2 年後忘了轉移，直接不小心被 GoDaddy 扣了續約價 &lt;code&gt;NT$554&lt;/code&gt;，也可以一開始就用 Google Domains，多付 &lt;code&gt;NT$34&lt;/code&gt; 省得自己以後健忘忘了轉移&lt;/p&gt;
+&lt;h3 id=&#34;godaddy-費用幣值案外案&#34;&gt;GoDaddy 費用幣值案外案&lt;/h3&gt;
+&lt;p&gt;在 GoDaddy 測試驗證費用時，發現如果是用美元計價，若購買網址 2 年以上，第 1 年費用居然是 &lt;code&gt;$12.17&lt;/code&gt;，若以匯率 &lt;code&gt;1:30&lt;/code&gt; 來算的話，約為 &lt;code&gt;NT$365&lt;/code&gt;，比台幣計價的費用貴 &lt;code&gt;NT$267&lt;/code&gt;，所以不同的幣值在同個方案的價格會有差異，若在 GoDaddy 購買時要小心選擇&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 169; flex-basis: 407px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-buy-price-3.png&#34; data-size=&#34;824x485&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-buy-price-3.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-buy-price-3_hudbc38af23e4aef28cbc9de2501bcf2d8_71366_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-buy-price-3_hudbc38af23e4aef28cbc9de2501bcf2d8_71366_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;824&#34;
+				height=&#34;485&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;GoDaddy 購買網域價格&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;GoDaddy 購買網域價格&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 169; flex-basis: 407px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-buy-price-4.png&#34; data-size=&#34;824x485&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-buy-price-4.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-buy-price-4_hu38059080207c30a4d22a14d189b49e7c_66747_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-buy-price-4_hu38059080207c30a4d22a14d189b49e7c_66747_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;824&#34;
+				height=&#34;485&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;GoDaddy 購買網域價格&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;GoDaddy 購買網域價格&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;設定從-godaddy-轉移網址&#34;&gt;設定從 GoDaddy 轉移網址&lt;/h2&gt;
+&lt;p&gt;在 &lt;a class=&#34;link&#34; href=&#34;https://account.godaddy.com/products&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GoDaddy 產品頁&lt;/a&gt;中，在要轉移的網址點選後面的 &lt;code&gt;管理&lt;/code&gt; 按鈕，在該網址管理頁最下方的 &lt;code&gt;其他設定&lt;/code&gt; 區塊，點選 &lt;code&gt;將網域從 GoDaddy 轉出&lt;/code&gt; 連結&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 265; flex-basis: 636px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-page.png&#34; data-size=&#34;923x348&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-page.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-page_huc402c8c01c413e8615b44a9af0579d9a_47345_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-page_huc402c8c01c413e8615b44a9af0579d9a_47345_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;923&#34;
+				height=&#34;348&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;GoDaddy 產品頁&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;GoDaddy 產品頁&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 249; flex-basis: 599px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-other-setting.png&#34; data-size=&#34;1121x449&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-other-setting.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-other-setting_huc5856023637913f71afb610034e034bc_105098_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-other-setting_huc5856023637913f71afb610034e034bc_105098_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1121&#34;
+				height=&#34;449&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;GoDaddy 產品網域轉出&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;GoDaddy 產品網域轉出&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在點選完轉出連結後，會到網域轉移頁，下方有 &lt;code&gt;網域轉移檢查清單&lt;/code&gt; 會告訴你網域轉出的流程及確認事項，點選下方的 &lt;code&gt;繼續轉移&lt;/code&gt; 按鈕&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;請確保管理聯絡人 email 是最新資訊。(您的轉移授權碼會寄到這裡。)&lt;/li&gt;
+&lt;li&gt;確認新註冊商會設定您的 DNS 區域檔案。如果您未執行上述操作，則網站和 email 將無法運作。&lt;/li&gt;
+&lt;li&gt;請新的註冊商開始進行網域轉移。(我們會寄 email 給您，以便確認您有要求轉移。)&lt;/li&gt;
+&lt;li&gt;授權新的註冊商進行轉移。(完成後，請使用我們用 email 寄給您的轉移授權碼。)&lt;/li&gt;
+&lt;li&gt;轉移手續完成後，我們會寄給您一封確認的 email，通常不會超過 5-7 天。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;之後在頁面會取得網頁轉移的 &lt;code&gt;授權碼&lt;/code&gt;，這個授權碼會在網頁上顯示，也會寄一封授權碼的信件給你，並將網域解鎖設定為可轉移&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;授權碼過期時間為 30 天，所以 30 天內此授權碼都是可以有效使用的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 180; flex-basis: 432px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-confirm-1.png&#34; data-size=&#34;1643x912&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-confirm-1.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-confirm-1_hu62ce4cd08eea0391f2290cf1a8d9ee73_228144_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-confirm-1_hu62ce4cd08eea0391f2290cf1a8d9ee73_228144_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1643&#34;
+				height=&#34;912&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;GoDaddy 產品網域轉出確認&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;GoDaddy 產品網域轉出確認&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 220; flex-basis: 528px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-confirm-2.png&#34; data-size=&#34;1656x752&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-confirm-2.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-confirm-2_huabcb4946c327557c02855336b5283517_126699_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-confirm-2_huabcb4946c327557c02855336b5283517_126699_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1656&#34;
+				height=&#34;752&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;GoDaddy 產品網域轉出確認&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;GoDaddy 產品網域轉出確認&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 220; flex-basis: 528px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-confirm-3.png&#34; data-size=&#34;1656x752&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-confirm-3.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-confirm-3_hu53222aa55c88d668a22cd0552213d95c_126430_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-confirm-3_hu53222aa55c88d668a22cd0552213d95c_126430_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1656&#34;
+				height=&#34;752&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;GoDaddy 產品網域轉出確認&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;GoDaddy 產品網域轉出確認&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 125; flex-basis: 302px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-confirm-4.png&#34; data-size=&#34;686x545&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-confirm-4.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-confirm-4_hu296933bbb170b61d15c1a1791449557b_54725_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-product-confirm-4_hu296933bbb170b61d15c1a1791449557b_54725_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;686&#34;
+				height=&#34;545&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;GoDaddy 產品網域轉出確認&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;GoDaddy 產品網域轉出確認&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;從-google-domains-取得-godaddy-網址&#34;&gt;從 Google Domains 取得 GoDaddy 網址&lt;/h2&gt;
+&lt;p&gt;在 &lt;a class=&#34;link&#34; href=&#34;https://domains.google.com/registrar/transfer?hl=zh-TW&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google Domain 轉移頁&lt;/a&gt;輸入要轉移的網址，在轉移頁會要求輸入剛剛從 GoDaddy 那邊拿到的 &lt;code&gt;授權碼&lt;/code&gt;，轉移後的 DNS 設定可以設定皆由 Google Domains 管理，或者保留原有的網頁伺服器管理，因為我這邊有用到 Cloudflare 去協助我做網址代管，而我也想繼續用 Cloudflare，所以我選擇保留現有的網址管理服務&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 158; flex-basis: 380px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-1.png&#34; data-size=&#34;1138x718&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-1.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-1_hue59a6357b9ff9b2ceaf16265224cc752_185066_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-1_hue59a6357b9ff9b2ceaf16265224cc752_185066_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1138&#34;
+				height=&#34;718&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Google Domains 轉入網域確認&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Google Domains 轉入網域確認&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 179; flex-basis: 430px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-2.png&#34; data-size=&#34;1209x674&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-2.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-2_hu862a16538be60567aa2ff5004809dbbc_187070_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-2_hu862a16538be60567aa2ff5004809dbbc_187070_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1209&#34;
+				height=&#34;674&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Google Domains 轉入網域確認&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Google Domains 轉入網域確認&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 179; flex-basis: 430px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-3.png&#34; data-size=&#34;1209x674&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-3.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-3_hu82cfc78a12d14c44f3da242c31849412_167480_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-3_hu82cfc78a12d14c44f3da242c31849412_167480_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1209&#34;
+				height=&#34;674&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Google Domains 轉入網域確認&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Google Domains 轉入網域確認&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 204; flex-basis: 490px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-4.png&#34; data-size=&#34;1209x591&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-4.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-4_hu587be76fdbe7566cfd489fb834fd29c5_155108_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-4_hu587be76fdbe7566cfd489fb834fd29c5_155108_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1209&#34;
+				height=&#34;591&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Google Domains 轉入網域確認&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Google Domains 轉入網域確認&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在最後的確認步驟可以看到我們需要額外付至少一年的網址費用 &lt;code&gt;$12&lt;/code&gt; 給 Google Domain，但我網址原本也是要續約，且 Google Domains 有提供免費的隱私權保護，所以我個人覺得這筆費用蠻划算的&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 155; flex-basis: 372px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-5.png&#34; data-size=&#34;1209x778&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-5.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-5_hu2238dd6f4cce3cacc275b3323b8e2653_276411_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-confirm-5_hu2238dd6f4cce3cacc275b3323b8e2653_276411_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1209&#34;
+				height=&#34;778&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Google Domains 轉入網域確認&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Google Domains 轉入網域確認&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;確認完後就開始進行付費，輸入個人的聯絡資訊，但目前還暫時不支援台灣的地址，所以我這邊先是選擇輸入美國的地址，但聯絡電話是填 &lt;code&gt;+886&lt;/code&gt; 台灣的電話，還是希望網址有問題時能夠聯絡到我，最後填寫信用卡卡號&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 75; flex-basis: 180px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-payment-confirm-1.png&#34; data-size=&#34;641x854&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-payment-confirm-1.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-payment-confirm-1_hub7700fc47b3ac2fc299307df7bea58f3_94148_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-payment-confirm-1_hub7700fc47b3ac2fc299307df7bea58f3_94148_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;641&#34;
+				height=&#34;854&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Google Domains 轉入網域付費確認&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Google Domains 轉入網域付費確認&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 75; flex-basis: 182px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-payment-confirm-2.png&#34; data-size=&#34;621x818&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-payment-confirm-2.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-payment-confirm-2_hu844ebdc83cd44ff17e023482bc2b9c3b_112872_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-payment-confirm-2_hu844ebdc83cd44ff17e023482bc2b9c3b_112872_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;621&#34;
+				height=&#34;818&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Google Domains 轉入網域付費確認&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Google Domains 轉入網域付費確認&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;付費成功後，在 Google Domains 網址狀態就會變成 &lt;code&gt;轉移中&lt;/code&gt;，要從 GoDaddy 那邊再次確認是否真的要移轉，此時會從 GoDaddy 收到一封確認移轉信，依照步驟到&lt;a class=&#34;link&#34; href=&#34;https://dcc.godaddy.com/control/transfers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;網址移轉頁&lt;/a&gt;，在 &lt;code&gt;轉出&lt;/code&gt; 頁籤，勾選下方要移轉的網址，然後點選 &lt;code&gt;核准轉移&lt;/code&gt; 按鈕&lt;/p&gt;
+&lt;p&gt;在上方移轉資訊是寫大概會 5~7 天內完成轉移程序，核准後大概 15~30 分鐘內可以處理完畢，我這邊核准後大概過了 1 分鐘左右就成功轉移到 Google Domains&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 351; flex-basis: 842px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-transfering-1.png&#34; data-size=&#34;857x244&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-transfering-1.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-transfering-1_hufce5134621829082e77dcba802f566da_44962_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-transfering-1_hufce5134621829082e77dcba802f566da_44962_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;857&#34;
+				height=&#34;244&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Google Domains 轉入網域付費確認&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Google Domains 轉入網域付費確認&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 102; flex-basis: 245px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-transfering-2.png&#34; data-size=&#34;799x781&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-transfering-2.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-transfering-2_hu5936f6f94a7c25cbed47b4fdbac244e7_163863_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-transfering-2_hu5936f6f94a7c25cbed47b4fdbac244e7_163863_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;799&#34;
+				height=&#34;781&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Google Domains 轉入網域付費確認&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Google Domains 轉入網域付費確認&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 192; flex-basis: 460px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-transfering-3.png&#34; data-size=&#34;1646x857&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-transfering-3.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-transfering-3_hu307ef861bd16f091dbbf0fa1ee80d556_148391_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-transfering-3_hu307ef861bd16f091dbbf0fa1ee80d556_148391_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1646&#34;
+				height=&#34;857&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Google Domains 轉入網域付費確認&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Google Domains 轉入網域付費確認&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;移轉完成後，在 Google Domains 可以看到網址狀態從轉移中變更為移轉完成，網址也順利續約 1 年，這樣就完成了網址的轉移了，整個過程大概在 1 小時內就可以順利完成轉移了&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 401; flex-basis: 964px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-transfering-4.png&#34; data-size=&#34;848x211&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-transfering-4.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-transfering-4_hu5d292f7a46fca6dd8732f5b9ba419b49_35963_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-google-domain-transfering-4_hu5d292f7a46fca6dd8732f5b9ba419b49_35963_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;848&#34;
+				height=&#34;211&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Google Domains 轉入網域付費確認&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Google Domains 轉入網域付費確認&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;godaddy-的慰留&#34;&gt;GoDaddy 的慰留&lt;/h2&gt;
+&lt;p&gt;在成功轉移後會收到 GoDaddy 的網域成功轉移通知信，確認網址已經成功轉移出去&lt;/p&gt;
+&lt;p&gt;也有收到慰留的信件，說網域從 &lt;code&gt;NT$582&lt;/code&gt; 會折扣到 &lt;code&gt;NT$239&lt;/code&gt;，價格折扣還蠻多的，但早知如此何必當初，一開始就用比較好的優惠價格跟服務，消費者也不會想要轉移出去，還是會先暫時轉移到 Google Domains 試用看看，價格算不錯也有免費的隱私權保護，之後再看看 GoDaddy 有模有什麼比較好的服務再考慮看看要不要轉移回去&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 114; flex-basis: 275px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-transfer-nofify-1.png&#34; data-size=&#34;707x616&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-transfer-nofify-1.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-transfer-nofify-1_hu18f32c75b789984b16c9a90eb12e31ed_70509_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-transfer-nofify-1_hu18f32c75b789984b16c9a90eb12e31ed_70509_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;707&#34;
+				height=&#34;616&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;GoDaddy 網域轉移確認信&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;GoDaddy 網域轉移確認信&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 114; flex-basis: 275px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-transfer-nofify-2.png&#34; data-size=&#34;707x616&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-transfer-nofify-2.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-transfer-nofify-2_hu9a8b4619624ff626fcab982d638f7d92_102376_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-transfer-nofify-2_hu9a8b4619624ff626fcab982d638f7d92_102376_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;707&#34;
+				height=&#34;616&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;GoDaddy 的慰留信&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;GoDaddy 的慰留信&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;godaddy-與-google-domains-隱私權保護比較&#34;&gt;GoDaddy 與 Google Domains 隱私權保護比較&lt;/h2&gt;
+&lt;h3 id=&#34;google-domain-隱私權免費&#34;&gt;Google Domain 隱私權（免費）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;系統不會公開顯示您的聯絡資訊，為保護您的個人資訊，並減少您收到的垃圾內容，第三方服務供應商會免費在 WHOIS 目錄中為您提供替代聯絡資訊&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;godaddy-全方位網域隱私及保護nt199-或-999&#34;&gt;GoDaddy 全方位網域隱私及保護（NT$199 或 $9.99）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;保護網域不受網域挾持或惡意轉移等威脅侵擾。&lt;/li&gt;
+&lt;li&gt;防止因信用卡過期或其他收費失敗問題而導致意外失去網域。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;godaddy-旗艦版網域保護與安全性nt471-或-1574&#34;&gt;GoDaddy 旗艦版網域保護與安全性（NT$471 或 $15.74）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;提供完整網域隱私保護。&lt;/li&gt;
+&lt;li&gt;通過自動惡意軟件掃描和持續安全監控來保護您的網域，有問題立即通知您。&lt;/li&gt;
+&lt;li&gt;監控搜索引擎黑名單以確保您的網域信譽受到保護。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在 GoDaddy 的隱私要到 「旗艦版網域保護與安全性」方案才有像 Google Domain 的完整網域隱私保護，但 GoDaddy 提供的隱私保護還是比 Google Domains 完整，Google Domains 目前還沒有提供其他更進階的隱私保護功能，所以可以自己參考選擇&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 173; flex-basis: 417px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-privacy-price-1.png&#34; data-size=&#34;1175x676&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-privacy-price-1.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-privacy-price-1_hubae64cc2725fe6fb091855249e090807_131369_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-privacy-price-1_hubae64cc2725fe6fb091855249e090807_131369_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1175&#34;
+				height=&#34;676&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;GoDaddy 網址隱私費用&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;GoDaddy 網址隱私費用&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 173; flex-basis: 417px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-privacy-price-2.png&#34; data-size=&#34;1175x676&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-privacy-price-2.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-privacy-price-2_hubae64cc2725fe6fb091855249e090807_129572_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-godaddy-privacy-price-2_hubae64cc2725fe6fb091855249e090807_129572_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1175&#34;
+				height=&#34;676&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;GoDaddy 網址隱私費用&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;GoDaddy 網址隱私費用&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在轉移過去後，在&lt;a class=&#34;link&#34; href=&#34;https://www.whois365.com/tw&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;全球 WHOIS 查詢&lt;/a&gt;可以看到 Google Domains 做的客戶個資隱私資訊已經全部隱藏了，覺得開心&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 81; flex-basis: 196px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-whois-privacy-1.png&#34; data-size=&#34;784x959&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-whois-privacy-1.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-whois-privacy-1_hu322d307e6cfa85e0e7dc276b3e7673b2_228644_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-whois-privacy-1_hu322d307e6cfa85e0e7dc276b3e7673b2_228644_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;784&#34;
+				height=&#34;959&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;WHOIS 隱私權比較 - Godaddy&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;WHOIS 隱私權比較 - Godaddy&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 81; flex-basis: 196px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-whois-privacy-2.png&#34; data-size=&#34;784x959&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-whois-privacy-2.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-whois-privacy-2_huffd0b20c79cc0011e4423581893700f1_198623_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/images/transfer-domain-whois-privacy-2_huffd0b20c79cc0011e4423581893700f1_198623_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;784&#34;
+				height=&#34;959&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;WHOIS 隱私權比較 - Google Domains&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;WHOIS 隱私權比較 - Google Domains&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://tw.godaddy.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;網域名稱、網站、主機和網路行銷工具 - GoDaddy TW&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://domains.google/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google Domains – Register Your Domain Name – Google Domains&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.whois365.com/tw&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;全球 WHOIS 查詢&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://support.google.com/domains/answer/3251242?hl=zh-Hant&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;隱私保護服務簡介 - Google Domains說明&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>Crello 免費 Icon 社群圖片線上編輯器</title>
         <link>https://murmur.kejyun.com/article/202105-crello-icon-design-online/</link>
         <pubDate>Thu, 20 May 2021 08:50:29 +0800</pubDate>

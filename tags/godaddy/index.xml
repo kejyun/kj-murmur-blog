@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GoDaddy on KJ Murmur 喃語</title>
+    <link>https://murmur.kejyun.com/tags/godaddy/</link>
+    <description>Recent content in GoDaddy on KJ Murmur 喃語</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 22 May 2021 08:50:29 +0800</lastBuildDate><atom:link href="https://murmur.kejyun.com/tags/godaddy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>從 GoDaddy 轉移網址到 Google Domains</title>
+      <link>https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/</link>
+      <pubDate>Sat, 22 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/</guid>
+      <description>GoDaddy 網址與 Google Domains 費用比較 使用 GoDaddy 買網址已經用了快 10 年了，雖然介面操作 GoDaddy 有持續的在改善，但 GoDaddy 在網址的續約及隱私權保護的費用真的是高，在 GoDaddy 的網址價格如果你購買 2 年以上，第一年會有優惠折扣只需要 NT$98，但第二年之後收費是 NT$554，所以兩年總共 NT$652 平均每年是 NT$326，但若只購買一年的話，在 GoDaddy 的網址費用就變成 NT$373 了
+ 2 年期的費用我用計算機算起來是 NT$652 但他結帳是 NT$685 ???
+  GoDaddy 購買網域價格   GoDaddy 購買網域價格 
+而在 Google Domains 購買網址的話，固定每年是 $12 美元，若以匯率 1:30 來算的話，約為 NT$360，比 GoDaddy 一次購買 2 年期的平均每年 NT$326 略高 NT$34，但在第 3 年續約價格就會跳漲到 NT$554，足足比 Google Domains 貴了 NT$194
+ Google 購買網域價格</description>
+    </item>
+    
+  </channel>
+</rss>
