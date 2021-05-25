@@ -6,7 +6,484 @@
         <description>Recent content on KJ Murmur 喃語</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Sun, 23 May 2021 08:50:29 +0800</lastBuildDate><atom:link href="https://murmur.kejyun.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 25 May 2021 08:50:29 +0800</lastBuildDate><atom:link href="https://murmur.kejyun.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>用 Google Chrome 遠端桌面控制 Debug 朋友電腦</title>
+        <link>https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/</link>
+        <pubDate>Tue, 25 May 2021 08:50:29 +0800</pubDate>
+        
+        <guid>https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/</guid>
+        <description>&lt;img src="https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/cover.png" alt="Featured image of post 用 Google Chrome 遠端桌面控制 Debug 朋友電腦" /&gt;&lt;p&gt;在之前幫朋友 Debug 電腦時用的是 Teamviewer 去做存取，而現在 Chrome 也有提供遠端桌面的功能，可以直接讓我們連線朋友的電腦，進而直接控制朋友電腦進行 Debug&lt;/p&gt;
+&lt;p&gt;但除了幫朋友去做遠端除錯，自己如果有多台裝置時，也可以登入同樣的帳號，對自己電腦做遠端連線存取，可以用手機或電腦直接連線輸入自訂 PIN 碼就直接存取&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;項目&lt;/th&gt;
+&lt;th&gt;說明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;名稱&lt;/td&gt;
+&lt;td&gt;Chrome 遠端桌面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;網址&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://remotedesktop.google.com/&#34;&gt;https://remotedesktop.google.com/&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;支援裝置&lt;/td&gt;
+&lt;td&gt;Mac、Windows、iOS、Android、Linux&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 184; flex-basis: 443px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-1.png&#34; data-size=&#34;2526x1366&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-1.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-1_hu59a1519f61a7e3e2c13d724917f31505_251162_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-1_hu59a1519f61a7e3e2c13d724917f31505_251162_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;2526&#34;
+				height=&#34;1366&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;讓自己電腦可以被自己其他裝置存取&#34;&gt;讓自己電腦可以被自己其他裝置存取&lt;/h2&gt;
+&lt;p&gt;在 &lt;a class=&#34;link&#34; href=&#34;https://remotedesktop.google.com/access&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Chrome 遠端桌面遠端存取頁籤&lt;/a&gt; 點選右下角藍色下載按鈕，會跳出 &lt;a class=&#34;link&#34; href=&#34;https://chrome.google.com/webstore/detail/chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Chrome Remote Desktop 套件&lt;/a&gt; 連結，將此套件加入 Chrome 中&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 184; flex-basis: 443px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-2.png&#34; data-size=&#34;2526x1366&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-2.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-2_hu59a1519f61a7e3e2c13d724917f31505_188165_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-2_hu59a1519f61a7e3e2c13d724917f31505_188165_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;2526&#34;
+				height=&#34;1366&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 130; flex-basis: 314px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-3.png&#34; data-size=&#34;1121x856&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-3.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-3_hua3b9fcce266c3ceae60bd075c29f55b8_339807_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-3_hua3b9fcce266c3ceae60bd075c29f55b8_339807_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1121&#34;
+				height=&#34;856&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;當下載完成套件後，點選畫面的 &lt;code&gt;接受並安裝&lt;/code&gt; 安裝 &lt;code&gt;Chrome Remote Desktop Host&lt;/code&gt; 的軟體，讓此電腦擁有被 Chrome 存取操作的權限，這樣才能夠讓目前這台電腦可以被存取控制，所以安裝過程需要輸入密碼才能夠順利安裝&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 184; flex-basis: 443px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-4.png&#34; data-size=&#34;2526x1366&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-4.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-4_hu59a1519f61a7e3e2c13d724917f31505_185585_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-4_hu59a1519f61a7e3e2c13d724917f31505_185585_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;2526&#34;
+				height=&#34;1366&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 176; flex-basis: 423px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-5.png&#34; data-size=&#34;1540x872&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-5.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-5_huef0f5a5db904324cf5c1da7fa9d69c93_95429_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-5_huef0f5a5db904324cf5c1da7fa9d69c93_95429_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1540&#34;
+				height=&#34;872&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;當兩個軟體都安裝完成後，就可以輸入你電腦的名稱，以及被允許存取的 &lt;code&gt;PIN 碼&lt;/code&gt; 了，當你用你自己帳號要連線到你自己電腦時，都需要輸入這一組 &lt;code&gt;PIN 碼&lt;/code&gt; 才能夠順利存取&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 183; flex-basis: 441px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-6.png&#34; data-size=&#34;2526x1374&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-6.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-6_hucd415ae3611903a462fb199ab0bcaf3b_171678_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-6_hucd415ae3611903a462fb199ab0bcaf3b_171678_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;2526&#34;
+				height=&#34;1374&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 183; flex-basis: 441px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-7.png&#34; data-size=&#34;2526x1374&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-7.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-7_hucd415ae3611903a462fb199ab0bcaf3b_200490_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-7_hucd415ae3611903a462fb199ab0bcaf3b_200490_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;2526&#34;
+				height=&#34;1374&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在 Mac 完成後必須要給 &lt;code&gt;Chrome Remote Desktop Host&lt;/code&gt; 及 &lt;code&gt;Remote Assistance Host&lt;/code&gt; 有存取 &lt;code&gt;Accessibility&lt;/code&gt; 的權限，並給予 &lt;code&gt;Chrome Remote Desktop Host&lt;/code&gt; 有 &lt;code&gt;Screen Recording&lt;/code&gt; 的權限&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在 Windows 只要安裝時使用管理者權限按允許安裝就全部可以允許存取了（安全堪慮？？？）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 168; flex-basis: 403px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-8.png&#34; data-size=&#34;1242x738&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-8.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-8_hu1eb7e0deb5c62474ab4272f2f6efce2c_285982_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-8_hu1eb7e0deb5c62474ab4272f2f6efce2c_285982_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1242&#34;
+				height=&#34;738&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 113; flex-basis: 273px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-9.png&#34; data-size=&#34;1560x1370&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-9.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-9_hu9fe34f40b425e65efb96320eec174593_507344_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-9_hu9fe34f40b425e65efb96320eec174593_507344_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1560&#34;
+				height=&#34;1370&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 113; flex-basis: 273px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-10.png&#34; data-size=&#34;1560x1370&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-10.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-10_hu9fe34f40b425e65efb96320eec174593_530514_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-10_hu9fe34f40b425e65efb96320eec174593_530514_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1560&#34;
+				height=&#34;1370&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 113; flex-basis: 273px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-11.png&#34; data-size=&#34;1560x1370&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-11.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-11_hu9fe34f40b425e65efb96320eec174593_529111_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-11_hu9fe34f40b425e65efb96320eec174593_529111_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1560&#34;
+				height=&#34;1370&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 113; flex-basis: 273px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-12.png&#34; data-size=&#34;780x685&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-12.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-12_huf8038f37c1d596fbe037fd87dbc683a8_188785_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-12_huf8038f37c1d596fbe037fd87dbc683a8_188785_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;780&#34;
+				height=&#34;685&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;全部設定完成後就會看到你的電腦已經上線允許被連線 Debug 了&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 183; flex-basis: 441px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-13.png&#34; data-size=&#34;2526x1374&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-13.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-13_hucd415ae3611903a462fb199ab0bcaf3b_130100_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-13_hucd415ae3611903a462fb199ab0bcaf3b_130100_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;2526&#34;
+				height=&#34;1374&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用-chrome-存取我的電腦&#34;&gt;使用 Chrome 存取我的電腦&lt;/h2&gt;
+&lt;p&gt;開啟我的 Windows 電腦，使用 Chrome 登入同樣的帳號時，就可以看到剛剛設定的電腦，點選時就可以輸入剛剛輸入的 &lt;code&gt;PIN 碼&lt;/code&gt; 進行連線&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;連線到遠端電腦僅需要安裝 &lt;a class=&#34;link&#34; href=&#34;https://chrome.google.com/webstore/detail/chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Chrome Remote Desktop 套件&lt;/a&gt; 即可連線&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 157; flex-basis: 377px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-14.png&#34; data-size=&#34;1121x713&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-14.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-14_hu18b83672ca18f1110ef4e18faebb2544_87513_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-14_hu18b83672ca18f1110ef4e18faebb2544_87513_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1121&#34;
+				height=&#34;713&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 94; flex-basis: 225px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-15.png&#34; data-size=&#34;314x334&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-15.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-15_hu6a5313d9fae276125cef31a8f7892a99_26147_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-15_hu6a5313d9fae276125cef31a8f7892a99_26147_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;314&#34;
+				height=&#34;334&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;連線進去後就可以看到我用 Windows 的 Chrome 在操控我的 Mac 了&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 177; flex-basis: 426px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-16.png&#34; data-size=&#34;1920x1080&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-16.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-16_hua111f7fe41dc48b043a51c97c73e00ac_1431739_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-16_hua111f7fe41dc48b043a51c97c73e00ac_1431739_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1920&#34;
+				height=&#34;1080&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;!--adsense--&gt;
+&lt;h2 id=&#34;設定允許連線到-windows-電腦&#34;&gt;設定允許連線到 Windows 電腦&lt;/h2&gt;
+&lt;p&gt;若我要允許 Windows 電腦也可以被其他電腦連線存取，一樣到 &lt;a class=&#34;link&#34; href=&#34;https://remotedesktop.google.com/access&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Chrome 遠端桌面遠端存取頁籤&lt;/a&gt;，點選右下角的下載藍色按鈕，安裝 Windows 版本的 &lt;code&gt;Chrome Remote Desktop Host&lt;/code&gt; 就可以讓 Window 電腦也可以被其他電腦遠端連線 Debug&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 160; flex-basis: 384px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-17.png&#34; data-size=&#34;1196x746&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-17.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-17_huce0c882d2d68f936a0347b91fa91f20b_99377_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-17_huce0c882d2d68f936a0347b91fa91f20b_99377_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1196&#34;
+				height=&#34;746&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 141; flex-basis: 340px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-18.png&#34; data-size=&#34;931x657&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-18.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-18_hue2bb6c77563df6ede1beb0fa0dfc0c38_96522_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-18_hue2bb6c77563df6ede1beb0fa0dfc0c38_96522_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;931&#34;
+				height=&#34;657&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;安裝完成後，一樣輸入 Windows 電腦的名稱及連線的 &lt;code&gt;PIN 碼&lt;/code&gt;，完成後就可以同時在瀏覽器看到 Mac 及 Windows 電腦都是允許被遠端連線存取的狀態了&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 141; flex-basis: 339px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-19.png&#34; data-size=&#34;969x686&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-19.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-19_hu99a77c2244dc03aca5f2c0f4a0c1c30d_89292_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-19_hu99a77c2244dc03aca5f2c0f4a0c1c30d_89292_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;969&#34;
+				height=&#34;686&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 129; flex-basis: 310px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-20.png&#34; data-size=&#34;990x764&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-20.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-20_hu3c6a3cd2b3277ab3d1a176d0b07f55b5_157070_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-20_hu3c6a3cd2b3277ab3d1a176d0b07f55b5_157070_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;990&#34;
+				height=&#34;764&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 166; flex-basis: 399px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-21.png&#34; data-size=&#34;990x595&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-21.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-21_hu459a5676fb3443f1a5c88f4d4e4d6a8a_58319_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-21_hu459a5676fb3443f1a5c88f4d4e4d6a8a_58319_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;990&#34;
+				height=&#34;595&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用-mac-連線到我的-windows-電腦&#34;&gt;使用 Mac 連線到我的 Windows 電腦&lt;/h2&gt;
+&lt;p&gt;當我打開我的 Mac 電腦，打開同樣帳號的瀏覽器，也可以同時看到我的 Windows 電腦也已經開啟準備讓我連線 Debug 了！&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 176; flex-basis: 423px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-22.png&#34; data-size=&#34;1263x716&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-22.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-22_hubd5b9a2f94f0214a28ab649b7a888c36_51679_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-22_hubd5b9a2f94f0214a28ab649b7a888c36_51679_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1263&#34;
+				height=&#34;716&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 176; flex-basis: 423px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-23.png&#34; data-size=&#34;1263x716&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-23.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-23_hubd5b9a2f94f0214a28ab649b7a888c36_57383_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-23_hubd5b9a2f94f0214a28ab649b7a888c36_57383_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1263&#34;
+				height=&#34;716&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;當連線進去 Windows 電腦時，就可以看到 Windows 的 Chrome 以及剛剛設定的連線畫面了&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 185; flex-basis: 446px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-24.png&#34; data-size=&#34;1270x683&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-24.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-24_hu1401fc667010fa8ea07843df7f81b436_110644_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-24_hu1401fc667010fa8ea07843df7f81b436_110644_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1270&#34;
+				height=&#34;683&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;讓朋友連線到我電腦-debug&#34;&gt;讓朋友連線到我電腦 Debug&lt;/h2&gt;
+&lt;p&gt;自己 Debug 自己電腦 De 不出個什麼毛，如果要讓朋友可以連線到你電腦進行 Debug 的話，點選 &lt;a class=&#34;link&#34; href=&#34;https://remotedesktop.google.com/support&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Chrome 遠端桌面遠端支援的頁籤&lt;/a&gt;，按下 &lt;code&gt;分享這個螢幕&lt;/code&gt; 區塊的右下角的 &lt;code&gt;+ 產生存取碼&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;這個存取碼是暫時的存取碼，允許朋友在一段時間內可以用這個存取碼連線到我電腦，而 &lt;code&gt;PIN 碼&lt;/code&gt; 是自己連線到自己電腦用的存取碼，所以是不會變動的，但也只有自己的帳號才能用 PIN 碼連線到自己電腦&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 185; flex-basis: 446px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-25.png&#34; data-size=&#34;1270x683&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-25.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-25_hu1401fc667010fa8ea07843df7f81b436_110461_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-25_hu1401fc667010fa8ea07843df7f81b436_110461_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1270&#34;
+				height=&#34;683&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 185; flex-basis: 446px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-26.png&#34; data-size=&#34;1270x683&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-26.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-26_hu1401fc667010fa8ea07843df7f81b436_97443_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-26_hu1401fc667010fa8ea07843df7f81b436_97443_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1270&#34;
+				height=&#34;683&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;請朋友連線到我電腦-debug&#34;&gt;請朋友連線到我電腦 Debug&lt;/h2&gt;
+&lt;p&gt;將產生的存取碼給朋友，在 &lt;a class=&#34;link&#34; href=&#34;https://remotedesktop.google.com/support&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Chrome 遠端桌面遠端支援的頁籤&lt;/a&gt;下方的 &lt;code&gt;連線至另一部電腦&lt;/code&gt; 區塊輸入你給他的存取碼就可以連線進行存取&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 204; flex-basis: 491px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-27.png&#34; data-size=&#34;1920x937&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-27.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-27_hu5cd6ede19d5a1e80c8e53e2256523add_125088_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-27_hu5cd6ede19d5a1e80c8e53e2256523add_125088_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1920&#34;
+				height=&#34;937&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;當你朋友連線當下，會跳出視窗詢問你是否允許你朋友動你電腦，點選 &lt;code&gt;Share&lt;/code&gt; 按鈕即可開始分享你的電腦控制權給你朋友幫你 Debug 了&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 185; flex-basis: 446px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-28.png&#34; data-size=&#34;1270x683&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-28.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-28_hu1401fc667010fa8ea07843df7f81b436_113738_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-28_hu1401fc667010fa8ea07843df7f81b436_113738_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1270&#34;
+				height=&#34;683&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 185; flex-basis: 446px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-29.png&#34; data-size=&#34;1270x683&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-29.png&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-29_hu1401fc667010fa8ea07843df7f81b436_91101_480x0_resize_box_2.png 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-29_hu1401fc667010fa8ea07843df7f81b436_91101_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1270&#34;
+				height=&#34;683&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;!--adsense--&gt;
+&lt;h2 id=&#34;使用手機-chrome-remote-desktop-連線到我的電腦&#34;&gt;使用手機 Chrome Remote Desktop 連線到我的電腦&lt;/h2&gt;
+&lt;p&gt;Chrome 遠端桌面也有提供 &lt;a class=&#34;link&#34; href=&#34;https://apps.apple.com/us/app/chrome-remote-desktop/id944025852&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;‎iOS App&lt;/a&gt; 及 &lt;a class=&#34;link&#34; href=&#34;https://play.google.com/store/apps/details?id=com.google.chromeremotedesktop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Android App&lt;/a&gt; 可以讓你用手機就可以連線到自己的電腦&lt;/p&gt;
+&lt;p&gt;下載後登入到自己有設定遠端桌面的帳號，連線後輸入 &lt;code&gt;PIN 碼&lt;/code&gt; 就可以連線了，但整個手機上的操作體驗還是沒有很順，我用 iOS 的 App 沒辦法順利地用觸控或滑鼠的方式去控制電腦，很容易點錯或點了沒有作用，這個部分的體驗感覺是還要再加強一下&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 46; flex-basis: 110px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-30.jpg&#34; data-size=&#34;828x1792&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-30.jpg&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-30_hu287ca547871d69de538c0aad75c5fd9d_140658_480x0_resize_q75_box.jpg 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-30_hu287ca547871d69de538c0aad75c5fd9d_140658_1024x0_resize_q75_box.jpg 1024w&#34;
+				width=&#34;828&#34;
+				height=&#34;1792&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 46; flex-basis: 110px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-31.jpg&#34; data-size=&#34;828x1792&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-31.jpg&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-31_hu5a7f345db2448aab9dd1f07954ff2f19_38297_480x0_resize_q75_box.jpg 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-31_hu5a7f345db2448aab9dd1f07954ff2f19_38297_1024x0_resize_q75_box.jpg 1024w&#34;
+				width=&#34;828&#34;
+				height=&#34;1792&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+&lt;figure style=&#34;flex-grow: 46; flex-basis: 110px&#34;&gt;
+		&lt;a href=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-32.jpg&#34; data-size=&#34;828x1792&#34;&gt;&lt;img src=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-32.jpg&#34;
+				srcset=&#34;https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-32_huddb264ba26bad2e0e301778690a66158_93409_480x0_resize_q75_box.jpg 480w, https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-32_huddb264ba26bad2e0e301778690a66158_93409_1024x0_resize_q75_box.jpg 1024w&#34;
+				width=&#34;828&#34;
+				height=&#34;1792&#34;
+				loading=&#34;lazy&#34;
+				alt=&#34;Chrome 遠端桌面&#34;&gt;
+		&lt;/a&gt;
+		
+		&lt;figcaption&gt;Chrome 遠端桌面&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;結語&#34;&gt;結語&lt;/h2&gt;
+&lt;p&gt;這樣就可以知道要怎麼用 Chrome 遠端桌面來幫朋友或幫自己電腦連線 Debug 了，提供了一個不錯的選項可以讓大家選擇，有興趣的人可以下載來玩看看&lt;/p&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://remotedesktop.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Chrome 遠端桌面&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://chrome.google.com/webstore/detail/chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Chrome Remote Desktop - Chrome 線上應用程式商店&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://support.google.com/chrome/answer/1649523?co=GENIE.Platform%3DDesktop&amp;amp;hl=zh-Hant&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;透過 Chrome 遠端桌面存取其他電腦 - 電腦 - Google Chrome說明&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://remotedesktop.google.com/access&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Chrome 遠端桌面 - 遠端存取&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://remotedesktop.google.com/support&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Chrome 遠端桌面 - 遠端支援&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://apps.apple.com/us/app/chrome-remote-desktop/id944025852&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;‎Chrome Remote Desktop on the App Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://play.google.com/store/apps/details?id=com.google.chromeremotedesktop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Chrome Remote Desktop - Apps on Google Play&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>從 GoDaddy 轉移網址到 Google Domains</title>
         <link>https://murmur.kejyun.com/article/202105-transfer-domain-from-godaddy-to-google/</link>
         <pubDate>Sun, 23 May 2021 08:50:29 +0800</pubDate>

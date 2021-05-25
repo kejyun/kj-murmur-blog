@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>遠端桌面 on KJ Murmur 喃語</title>
+    <link>https://murmur.kejyun.com/tags/%E9%81%A0%E7%AB%AF%E6%A1%8C%E9%9D%A2/</link>
+    <description>Recent content in 遠端桌面 on KJ Murmur 喃語</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Tue, 25 May 2021 08:50:29 +0800</lastBuildDate><atom:link href="https://murmur.kejyun.com/tags/%E9%81%A0%E7%AB%AF%E6%A1%8C%E9%9D%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用 Google Chrome 遠端桌面控制 Debug 朋友電腦</title>
+      <link>https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/</link>
+      <pubDate>Tue, 25 May 2021 08:50:29 +0800</pubDate>
+      
+      <guid>https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/</guid>
+      <description>在之前幫朋友 Debug 電腦時用的是 Teamviewer 去做存取，而現在 Chrome 也有提供遠端桌面的功能，可以直接讓我們連線朋友的電腦，進而直接控制朋友電腦進行 Debug
+但除了幫朋友去做遠端除錯，自己如果有多台裝置時，也可以登入同樣的帳號，對自己電腦做遠端連線存取，可以用手機或電腦直接連線輸入自訂 PIN 碼就直接存取
+   項目 說明     名稱 Chrome 遠端桌面   網址 https://remotedesktop.google.com/   支援裝置 Mac、Windows、iOS、Android、Linux     Chrome 遠端桌面 
+讓自己電腦可以被自己其他裝置存取 在 Chrome 遠端桌面遠端存取頁籤 點選右下角藍色下載按鈕，會跳出 Chrome Remote Desktop 套件 連結，將此套件加入 Chrome 中
+ Chrome 遠端桌面   Chrome 遠端桌面 
+當下載完成套件後，點選畫面的 接受並安裝 安裝 Chrome Remote Desktop Host 的軟體，讓此電腦擁有被 Chrome 存取操作的權限，這樣才能夠讓目前這台電腦可以被存取控制，所以安裝過程需要輸入密碼才能夠順利安裝
+ Chrome 遠端桌面   Chrome 遠端桌面</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='在朋友電腦有問題時，用打字及語音很難了解朋友電腦狀況，視訊的話若朋友對操作不熟悉，即便告訴朋友怎麼做，但朋友一時很難理解我們的話往往會做錯造成 Debug 困難重重，所以遠端軟體可以讓我們直接控制朋友的電腦進行 Debug，讓處理電腦問題變得快又省時'><title>用 Google Chrome 遠端桌面控制 Debug 朋友電腦 | KJ Murmur 喃語</title>
+
+<link rel='canonical' href='https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='用 Google Chrome 遠端桌面控制 Debug 朋友電腦 | KJ Murmur 喃語'>
+<meta property='og:description' content='在朋友電腦有問題時，用打字及語音很難了解朋友電腦狀況，視訊的話若朋友對操作不熟悉，即便告訴朋友怎麼做，但朋友一時很難理解我們的話往往會做錯造成 Debug 困難重重，所以遠端軟體可以讓我們直接控制朋友的電腦進行 Debug，讓處理電腦問題變得快又省時'>
+<meta property='og:url' content='https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/'>
+<meta property='og:site_name' content='KJ Murmur 喃語'>
+<meta property='og:type' content='article'><meta property='article:section' content='Article' /><meta property='article:tag' content='遠端桌面' /><meta property='article:tag' content='Remote Desktop' /><meta property='article:published_time' content='2021-05-25T08:50:29&#43;08:00'/><meta property='article:modified_time' content='2021-05-25T08:50:29&#43;08:00'/><meta property='og:image' content='https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/cover.png' />
+<meta name="twitter:title" content="用 Google Chrome 遠端桌面控制 Debug 朋友電腦">
+<meta name="twitter:description" content="在朋友電腦有問題時，用打字及語音很難了解朋友電腦狀況，視訊的話若朋友對操作不熟悉，即便告訴朋友怎麼做，但朋友一時很難理解我們的話往往會做錯造成 Debug 困難重重，所以遠端軟體可以讓我們直接控制朋友的電腦進行 Debug，讓處理電腦問題變得快又省時"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/cover.png' />
+    <link rel="shortcut icon" href="/assets/images/observe-universe.png" />
+
+
+
+
+  
+    
+
+<script type="application/ld+json">
+{
+    "@context":"http://schema.org",
+    "@type":"Article",
+    "headline":"用 Google Chrome 遠端桌面控制 Debug 朋友電腦",
+    "url":"https:\/\/murmur.kejyun.com\/article\/202105-google-chrome-remote-desktop-debug-friends-computer\/",
+    "keywords":[
+    
+        
+          
+          "Google Chrome Remote Desktop"
+        
+          , 
+          "Chrome 遠端桌面"
+        
+          , 
+          "遠端桌面"
+        
+          , 
+          "Remote Desktop"
+        
+    
+    ],
+    "image":{
+        "@type":"ImageObject",
+        "url" :
+        
+          "https:\/\/murmur.kejyun.com",
+        
+        "width":"1200",
+        "height":"627"
+    },
+    "mainEntityOfPage":"True",
+    "publisher":{
+        "@type":"Organization",
+        "name":"",
+        "url":"https:\/\/murmur.kejyun.com",
+        "logo":{
+            "@type":"ImageObject",
+            "url":"https:\/\/murmur.kejyun.com",
+            "width":"357",
+            "height":"60"
+        }
+    },
+    "dateCreated":"2021-05-25T08:50:29\u002b08:00",
+    "datePublished":"2021-05-25T08:50:29\u002b08:00",
+    
+    
+    "author":"KeJyun",
+    "creator":"KeJyun",
+    
+    "dateModified":"2021-05-25T08:50:29\u002b08:00",
+    "articleSection":"TechArticle"
+}
+</script>
+
+  
+
+  
+    
+<script type="application/ld+json">
+	{
+		"@context":"http://schema.org",
+		"@type": "BlogPosting",
+		"image":
+		
+			"https:\/\/murmur.kejyun.com",
+		
+		"url": "https:\/\/murmur.kejyun.com\/article\/202105-google-chrome-remote-desktop-debug-friends-computer\/",
+		"headline": "用 Google Chrome 遠端桌面控制 Debug 朋友電腦",
+		"alternativeHeadline": "用 Google Chrome 遠端桌面控制 Debug 朋友電腦",
+		"dateCreated": "2021-05-25T08:50:29\u002b08:00",
+		"datePublished": "2021-05-25T08:50:29\u002b08:00",
+		"dateModified": "2021-05-25T08:50:29\u002b08:00",
+		"inLanguage": "zh-tw",
+		"isFamilyFriendly": "true",
+		"copyrightYear": "2021",
+		"copyrightHolder": "",
+		"contentLocation": {
+			"@type": "Place",
+			"name": "Taipei City"
+		},
+		
+		"accountablePerson": {
+			"@type": "Person",
+			"name": "KeJyun",
+			"url": "https:\/\/murmur.kejyun.com"
+		},
+		"author": {
+			"@type": "Person",
+			"name": "KeJyun",
+			"url": "https:\/\/murmur.kejyun.com"
+		},
+		"creator": {
+			"@type": "Person",
+			"name": "KeJyun",
+			"url": "https:\/\/murmur.kejyun.com"
+		},
+		
+		"publisher": {
+			"@type": "Organization",
+			"name": "",
+			"url": "https:\/\/murmur.kejyun.com",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "https:\/\/murmur.kejyun.com",
+				"width":"357",
+				"height":"60"
+			}
+		},
+		"mainEntityOfPage": "True",
+		"keywords": [ 
+			"Google Chrome Remote Desktop", "Chrome 遠端桌面", "遠端桌面", "Remote Desktop"
+		
+		],
+		"genre":[""],
+		"articleSection": "",
+		"articleBody": "在之前幫朋友 Debug 電腦時用的是 Teamviewer 去做存取，而現在 Chrome 也有提供遠端桌面的功能，可以直接讓我們連線朋友的電腦，進而直接控制朋友電腦進行 Debug\n但除了幫朋友去做遠端除錯，自己如果有多台裝置時，也可以登入同樣的帳號，對自己電腦做遠端連線存取，可以用手機或電腦直接連線輸入自訂 PIN 碼就直接存取\n   項目 說明     名稱 Chrome 遠端桌面   網址 https:\/\/remotedesktop.google.com\/   支援裝置 Mac、Windows、iOS、Android、Linux     Chrome 遠端桌面 \n讓自己電腦可以被自己其他裝置存取 在 Chrome 遠端桌面遠端存取頁籤 點選右下角藍色下載按鈕，會跳出 Chrome Remote Desktop 套件 連結，將此套件加入 Chrome 中\n Chrome 遠端桌面   Chrome 遠端桌面 \n當下載完成套件後，點選畫面的 接受並安裝 安裝 Chrome Remote Desktop Host 的軟體，讓此電腦擁有被 Chrome 存取操作的權限，這樣才能夠讓目前這台電腦可以被存取控制，所以安裝過程需要輸入密碼才能夠順利安裝\n Chrome 遠端桌面   Chrome 遠端桌面 \n當兩個軟體都安裝完成後，就可以輸入你電腦的名稱，以及被允許存取的 PIN 碼 了，當你用你自己帳號要連線到你自己電腦時，都需要輸入這一組 PIN 碼 才能夠順利存取\n Chrome 遠端桌面   Chrome 遠端桌面 \n在 Mac 完成後必須要給 Chrome Remote Desktop Host 及 Remote Assistance Host 有存取 Accessibility 的權限，並給予 Chrome Remote Desktop Host 有 Screen Recording 的權限\n 在 Windows 只要安裝時使用管理者權限按允許安裝就全部可以允許存取了（安全堪慮？？？）\n  Chrome 遠端桌面   Chrome 遠端桌面   Chrome 遠端桌面   Chrome 遠端桌面   Chrome 遠端桌面 \n全部設定完成後就會看到你的電腦已經上線允許被連線 Debug 了\n Chrome 遠端桌面 \n使用 Chrome 存取我的電腦 開啟我的 Windows 電腦，使用 Chrome 登入同樣的帳號時，就可以看到剛剛設定的電腦，點選時就可以輸入剛剛輸入的 PIN 碼 進行連線\n 連線到遠端電腦僅需要安裝 Chrome Remote Desktop 套件 即可連線\n  Chrome 遠端桌面   Chrome 遠端桌面 \n連線進去後就可以看到我用 Windows 的 Chrome 在操控我的 Mac 了\n Chrome 遠端桌面 \n 設定允許連線到 Windows 電腦 若我要允許 Windows 電腦也可以被其他電腦連線存取，一樣到 Chrome 遠端桌面遠端存取頁籤，點選右下角的下載藍色按鈕，安裝 Windows 版本的 Chrome Remote Desktop Host 就可以讓 Window 電腦也可以被其他電腦遠端連線 Debug\n Chrome 遠端桌面   Chrome 遠端桌面 \n安裝完成後，一樣輸入 Windows 電腦的名稱及連線的 PIN 碼，完成後就可以同時在瀏覽器看到 Mac 及 Windows 電腦都是允許被遠端連線存取的狀態了\n Chrome 遠端桌面   Chrome 遠端桌面   Chrome 遠端桌面 \n使用 Mac 連線到我的 Windows 電腦 當我打開我的 Mac 電腦，打開同樣帳號的瀏覽器，也可以同時看到我的 Windows 電腦也已經開啟準備讓我連線 Debug 了！\n Chrome 遠端桌面   Chrome 遠端桌面 \n當連線進去 Windows 電腦時，就可以看到 Windows 的 Chrome 以及剛剛設定的連線畫面了\n Chrome 遠端桌面 \n讓朋友連線到我電腦 Debug 自己 Debug 自己電腦 De 不出個什麼毛，如果要讓朋友可以連線到你電腦進行 Debug 的話，點選 Chrome 遠端桌面遠端支援的頁籤，按下 分享這個螢幕 區塊的右下角的 \u002b 產生存取碼\n 這個存取碼是暫時的存取碼，允許朋友在一段時間內可以用這個存取碼連線到我電腦，而 PIN 碼 是自己連線到自己電腦用的存取碼，所以是不會變動的，但也只有自己的帳號才能用 PIN 碼連線到自己電腦\n  Chrome 遠端桌面   Chrome 遠端桌面 \n請朋友連線到我電腦 Debug 將產生的存取碼給朋友，在 Chrome 遠端桌面遠端支援的頁籤下方的 連線至另一部電腦 區塊輸入你給他的存取碼就可以連線進行存取\n Chrome 遠端桌面 \n當你朋友連線當下，會跳出視窗詢問你是否允許你朋友動你電腦，點選 Share 按鈕即可開始分享你的電腦控制權給你朋友幫你 Debug 了\n Chrome 遠端桌面   Chrome 遠端桌面 \n 使用手機 Chrome Remote Desktop 連線到我的電腦 Chrome 遠端桌面也有提供 ‎iOS App 及 Android App 可以讓你用手機就可以連線到自己的電腦\n下載後登入到自己有設定遠端桌面的帳號，連線後輸入 PIN 碼 就可以連線了，但整個手機上的操作體驗還是沒有很順，我用 iOS 的 App 沒辦法順利地用觸控或滑鼠的方式去控制電腦，很容易點錯或點了沒有作用，這個部分的體驗感覺是還要再加強一下\n Chrome 遠端桌面   Chrome 遠端桌面   Chrome 遠端桌面 \n結語 這樣就可以知道要怎麼用 Chrome 遠端桌面來幫朋友或幫自己電腦連線 Debug 了，提供了一個不錯的選項可以讓大家選擇，有興趣的人可以下載來玩看看\n參考資料  Chrome 遠端桌面 Chrome Remote Desktop - Chrome 線上應用程式商店 透過 Chrome 遠端桌面存取其他電腦 - 電腦 - Google Chrome說明 Chrome 遠端桌面 - 遠端存取 Chrome 遠端桌面 - 遠端支援 ‎Chrome Remote Desktop on the App Store Chrome Remote Desktop - Apps on Google Play  "
+	}
+</script>
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+	
+	
+	
+	  
+		
+		
+		
+		
+		
+	
+
+	
+	
+	
+	  
+		
+		
+		
+		
+		
+	
+
+	
+	
+	
+
+
+
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement":
+		[{
+			"@type": "ListItem",
+				"position": 1,
+				"item": {
+					"@id": "https:\/\/murmur.kejyun.com",
+					"name": "Home"
+				}
+		},
+		
+			
+		
+			
+				{
+					"@type": "ListItem",
+					"position":  2 ,
+					"item": {
+						"@id": "https:\/\/murmur.kejyun.co\/\/article",
+						"name": "Article"
+					}
+				}
+				, 
+			
+		
+			
+				{
+					"@type": "ListItem",
+					"position":  3 ,
+					"item": {
+						"@id": "https:\/\/murmur.kejyun.co\/\/article\/202105-google-chrome-remote-desktop-debug-friends-computer",
+						"name": "202105 google chrome remote desktop debug friends computer"
+					}
+				}
+				, 
+			
+		
+	]
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+
+<script type="application/ld+json">
+{
+"@context": "http://www.schema.org",
+"@type": "Person",
+"@id": "https:\/\/murmur.kejyun.com\/article\/202105-google-chrome-remote-desktop-debug-friends-computer\/",
+"name": "KeJyun",
+"alternateName": "KeJyun",
+"nationality": "Taiwan",
+
+"affiliation": [
+	{
+		"@type": "Organization",
+		"name": "",
+		"sameAs": [ "\n"
+		]
+  	}
+],
+
+"gender": "male",
+"Description": "IT Manager",
+"disambiguatingDescription": "Hi I\u0027m Web Developer in Taiwan",
+
+"worksFor": [
+	{
+		"@type": "Organization",
+		"name": "",
+		"sameAs": [ "\n"
+		]
+	}
+],
+"url": "https:\/\/murmur.kejyun.com",
+"image": "https:\/\/murmur.kejyun.com\/company\/team\/KeJyun.png",
+
+"sameAs": [ "\n\n\n\n\n\n\"https://ca.linkedin.com/in/kejyun/en\",\n\n\n\"https://github.com/kejyun\",\n\n\n\n\n\n\n\n\n\n\n\n\"\"\n"
+	]
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+<script type="application/ld+json">
+[
+	{
+		"@context": "http://schema.org",
+		"@type": "Webpage",
+		"specialty": "",
+		"mainContentOfPage": {
+			"@context": "http://schema.org/",
+			"@type": "WebPageElement",
+			"cssSelector": ".body-content"
+		},
+		"primaryImageOfPage": "https:\/\/murmur.kejyun.com"
+	},
+	{
+		"@context": "http://schema.org",
+		"@type": "WebSite",
+		"@id": "https:\/\/murmur.kejyun.com",
+		"additionalType": ["CreativeWork", "Person"],
+		"url": "https:\/\/murmur.kejyun.com",
+		"name": "KJ Murmur 喃語",
+		"alternateName": "KJ Murmur 喃語",
+		"headline": "",
+		"image": "https:\/\/murmur.kejyun.com",
+		"inLanguage": "zh-tw",
+		"author": "",
+		"description": "",
+		"disambiguatingDescription": "",
+		"isFamilyFriendly": "http://schema.org/True",
+		"contentRating": "NR",
+		"sourceOrganization": "KJ Murmur 喃語",
+		"publisher": {
+		  "@type": "Organization",
+		  "name": "KJ Murmur 喃語",
+		  "logo": {
+		    "@type": "ImageObject",
+		    "url": "https:\/\/murmur.kejyun.com",
+		    "height": 60,
+		    "width": 107
+		  }
+		},
+		"mainEntity": {
+			"@context": "http://schema.org",
+			"@type": "localBusiness",
+			"name": "KJ Murmur 喃語",
+			"image":"https:\/\/murmur.kejyun.com",
+			
+
+			
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "Taipei street",
+				"addressLocality": "Taipei City",
+				"addressRegion": "Taipei",
+				"addressCountry": "Taiwan",
+				"postalCode": "100"
+			},
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "4.5",
+				"reviewCount": "50"
+			}
+		},
+		"potentialAction": {
+			"@type": "SearchAction",
+			"target": "https:\/\/murmur.kejyun.com?search={search_term}",
+			"query-input": "required name=search_term"
+		},
+		"keywords":[
+			
+		],
+		"hasPart": [
+			{
+				"@context": "http://schema.org/",
+				"@type": "WPHeader",
+				"@id": "#header",
+				"headline": "",
+				"cssSelector": "#header",
+				"potentialAction": [],
+				"@graph":
+				[
+					{
+						"@context": "https://schema.org",
+						"@type":"SiteNavigationElement",
+						"@id":"#header",
+						"name": "",
+						"url": "https:\/\/murmur.kejyun.com\/"
+					}, 
+					{
+						"@context": "https://schema.org",
+						"@type":"SiteNavigationElement",
+						"@id":"#header",
+						"name": "About",
+						"url": "https:\/\/murmur.kejyun.com\/about\/"
+					}, 
+					{
+						"@context": "https://schema.org",
+						"@type":"SiteNavigationElement",
+						"@id":"#header",
+						"name": "Archives",
+						"url": "https:\/\/murmur.kejyun.com\/archives\/"
+					}, 
+					{
+						"@context": "https://schema.org",
+						"@type":"SiteNavigationElement",
+						"@id":"#header",
+						"name": "Search",
+						"url": "https:\/\/murmur.kejyun.com\/search\/"
+					}]
+			},
+			{
+				"@context": "http://schema.org/",
+				"@type": "WPSidebar",
+				"cssSelector": "#sidebar",
+				"citation": [
+				"https:\/\/murmur.kejyun.com\/", "https:\/\/murmur.kejyun.com\/about\/", "https:\/\/murmur.kejyun.com\/archives\/", "https:\/\/murmur.kejyun.com\/search\/"
+				]
+			},
+			{
+				"@context": "http://schema.org/",
+				"@type": "WPFooter",
+				"cssSelector": ".footer",
+				"@id": "#footer",
+				"copyrightHolder":"KJ Murmur 喃語",
+				"publisher": "KJ Murmur 喃語",
+				"copyrightYear":"2021"
+			}
+		]
+	}
+]
+</script>
+
+  
+
+  
+
+<link rel="canonical" href="https://murmur.kejyun.com/article/202105-google-chrome-remote-desktop-debug-friends-computer/" />
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-623XYSQGEX"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-623XYSQGEX', { 'anonymize_ip': false });
+}
+</script>
+
+
+    </head>
+    <body class="article-page keep-sidebar">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "light");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended ">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/images/observe-universe_hua7e3d7bd738448651eaa0b1d778255e2_652378_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://murmur.kejyun.com">KJ Murmur 喃語</a></h1>
+        <h2 class="site-description">KJ 生活雜想紀錄</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/">
+                <img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/cover_huaedbb804596b8fdc3e4e152f7517595e_239345_800x0_resize_box_2.png"
+                        srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/cover_huaedbb804596b8fdc3e4e152f7517595e_239345_800x0_resize_box_2.png 800w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/cover_huaedbb804596b8fdc3e4e152f7517595e_239345_1600x0_resize_box_2.png 1600w"
+                        width="800" 
+                        height="362" 
+                        loading="lazy"
+                        alt="Featured image of post 用 Google Chrome 遠端桌面控制 Debug 朋友電腦" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%8A%80%E8%A1%93/" >
+                技術
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/">用 Google Chrome 遠端桌面控制 Debug 朋友電腦</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        在朋友電腦有問題時，用打字及語音很難了解朋友電腦狀況，視訊的話若朋友對操作不熟悉，即便告訴朋友怎麼做，但朋友一時很難理解我們的話往往會做錯造成 Debug 困難重重，所以遠端軟體可以讓我們直接控制朋友的電腦進行 Debug，讓處理電腦問題變得快又省時
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">May 25, 2021</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+  
+  
+
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1990193713845546"
+     data-ad-slot="5417606383"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+  
+  
+  <p>在之前幫朋友 Debug 電腦時用的是 Teamviewer 去做存取，而現在 Chrome 也有提供遠端桌面的功能，可以直接讓我們連線朋友的電腦，進而直接控制朋友電腦進行 Debug</p>
+<p>但除了幫朋友去做遠端除錯，自己如果有多台裝置時，也可以登入同樣的帳號，對自己電腦做遠端連線存取，可以用手機或電腦直接連線輸入自訂 PIN 碼就直接存取</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>名稱</td>
+<td>Chrome 遠端桌面</td>
+</tr>
+<tr>
+<td>網址</td>
+<td><a href="https://remotedesktop.google.com/">https://remotedesktop.google.com/</a></td>
+</tr>
+<tr>
+<td>支援裝置</td>
+<td>Mac、Windows、iOS、Android、Linux</td>
+</tr>
+</tbody>
+</table>
+<p><figure style="flex-grow: 184; flex-basis: 443px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-1.png" data-size="2526x1366"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-1.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-1_hu59a1519f61a7e3e2c13d724917f31505_251162_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-1_hu59a1519f61a7e3e2c13d724917f31505_251162_1024x0_resize_box_2.png 1024w"
+				width="2526"
+				height="1366"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure></p>
+<h2 id="讓自己電腦可以被自己其他裝置存取">讓自己電腦可以被自己其他裝置存取</h2>
+<p>在 <a class="link" href="https://remotedesktop.google.com/access"  target="_blank" rel="noopener"
+    >Chrome 遠端桌面遠端存取頁籤</a> 點選右下角藍色下載按鈕，會跳出 <a class="link" href="https://chrome.google.com/webstore/detail/chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai"  target="_blank" rel="noopener"
+    >Chrome Remote Desktop 套件</a> 連結，將此套件加入 Chrome 中</p>
+<p><figure style="flex-grow: 184; flex-basis: 443px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-2.png" data-size="2526x1366"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-2.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-2_hu59a1519f61a7e3e2c13d724917f31505_188165_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-2_hu59a1519f61a7e3e2c13d724917f31505_188165_1024x0_resize_box_2.png 1024w"
+				width="2526"
+				height="1366"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure>
+<figure style="flex-grow: 130; flex-basis: 314px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-3.png" data-size="1121x856"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-3.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-3_hua3b9fcce266c3ceae60bd075c29f55b8_339807_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-3_hua3b9fcce266c3ceae60bd075c29f55b8_339807_1024x0_resize_box_2.png 1024w"
+				width="1121"
+				height="856"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure></p>
+<p>當下載完成套件後，點選畫面的 <code>接受並安裝</code> 安裝 <code>Chrome Remote Desktop Host</code> 的軟體，讓此電腦擁有被 Chrome 存取操作的權限，這樣才能夠讓目前這台電腦可以被存取控制，所以安裝過程需要輸入密碼才能夠順利安裝</p>
+<p><figure style="flex-grow: 184; flex-basis: 443px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-4.png" data-size="2526x1366"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-4.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-4_hu59a1519f61a7e3e2c13d724917f31505_185585_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-4_hu59a1519f61a7e3e2c13d724917f31505_185585_1024x0_resize_box_2.png 1024w"
+				width="2526"
+				height="1366"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure>
+<figure style="flex-grow: 176; flex-basis: 423px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-5.png" data-size="1540x872"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-5.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-5_huef0f5a5db904324cf5c1da7fa9d69c93_95429_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-5_huef0f5a5db904324cf5c1da7fa9d69c93_95429_1024x0_resize_box_2.png 1024w"
+				width="1540"
+				height="872"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure></p>
+<p>當兩個軟體都安裝完成後，就可以輸入你電腦的名稱，以及被允許存取的 <code>PIN 碼</code> 了，當你用你自己帳號要連線到你自己電腦時，都需要輸入這一組 <code>PIN 碼</code> 才能夠順利存取</p>
+<p><figure style="flex-grow: 183; flex-basis: 441px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-6.png" data-size="2526x1374"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-6.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-6_hucd415ae3611903a462fb199ab0bcaf3b_171678_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-6_hucd415ae3611903a462fb199ab0bcaf3b_171678_1024x0_resize_box_2.png 1024w"
+				width="2526"
+				height="1374"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure>
+<figure style="flex-grow: 183; flex-basis: 441px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-7.png" data-size="2526x1374"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-7.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-7_hucd415ae3611903a462fb199ab0bcaf3b_200490_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-7_hucd415ae3611903a462fb199ab0bcaf3b_200490_1024x0_resize_box_2.png 1024w"
+				width="2526"
+				height="1374"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure></p>
+<p>在 Mac 完成後必須要給 <code>Chrome Remote Desktop Host</code> 及 <code>Remote Assistance Host</code> 有存取 <code>Accessibility</code> 的權限，並給予 <code>Chrome Remote Desktop Host</code> 有 <code>Screen Recording</code> 的權限</p>
+<blockquote>
+<p>在 Windows 只要安裝時使用管理者權限按允許安裝就全部可以允許存取了（安全堪慮？？？）</p>
+</blockquote>
+<p><figure style="flex-grow: 168; flex-basis: 403px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-8.png" data-size="1242x738"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-8.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-8_hu1eb7e0deb5c62474ab4272f2f6efce2c_285982_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-8_hu1eb7e0deb5c62474ab4272f2f6efce2c_285982_1024x0_resize_box_2.png 1024w"
+				width="1242"
+				height="738"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure>
+<figure style="flex-grow: 113; flex-basis: 273px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-9.png" data-size="1560x1370"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-9.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-9_hu9fe34f40b425e65efb96320eec174593_507344_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-9_hu9fe34f40b425e65efb96320eec174593_507344_1024x0_resize_box_2.png 1024w"
+				width="1560"
+				height="1370"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure>
+<figure style="flex-grow: 113; flex-basis: 273px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-10.png" data-size="1560x1370"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-10.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-10_hu9fe34f40b425e65efb96320eec174593_530514_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-10_hu9fe34f40b425e65efb96320eec174593_530514_1024x0_resize_box_2.png 1024w"
+				width="1560"
+				height="1370"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure>
+<figure style="flex-grow: 113; flex-basis: 273px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-11.png" data-size="1560x1370"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-11.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-11_hu9fe34f40b425e65efb96320eec174593_529111_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-11_hu9fe34f40b425e65efb96320eec174593_529111_1024x0_resize_box_2.png 1024w"
+				width="1560"
+				height="1370"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure>
+<figure style="flex-grow: 113; flex-basis: 273px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-12.png" data-size="780x685"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-12.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-12_huf8038f37c1d596fbe037fd87dbc683a8_188785_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-12_huf8038f37c1d596fbe037fd87dbc683a8_188785_1024x0_resize_box_2.png 1024w"
+				width="780"
+				height="685"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure></p>
+<p>全部設定完成後就會看到你的電腦已經上線允許被連線 Debug 了</p>
+<p><figure style="flex-grow: 183; flex-basis: 441px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-13.png" data-size="2526x1374"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-13.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-13_hucd415ae3611903a462fb199ab0bcaf3b_130100_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-13_hucd415ae3611903a462fb199ab0bcaf3b_130100_1024x0_resize_box_2.png 1024w"
+				width="2526"
+				height="1374"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure></p>
+<h2 id="使用-chrome-存取我的電腦">使用 Chrome 存取我的電腦</h2>
+<p>開啟我的 Windows 電腦，使用 Chrome 登入同樣的帳號時，就可以看到剛剛設定的電腦，點選時就可以輸入剛剛輸入的 <code>PIN 碼</code> 進行連線</p>
+<blockquote>
+<p>連線到遠端電腦僅需要安裝 <a class="link" href="https://chrome.google.com/webstore/detail/chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai"  target="_blank" rel="noopener"
+    >Chrome Remote Desktop 套件</a> 即可連線</p>
+</blockquote>
+<p><figure style="flex-grow: 157; flex-basis: 377px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-14.png" data-size="1121x713"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-14.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-14_hu18b83672ca18f1110ef4e18faebb2544_87513_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-14_hu18b83672ca18f1110ef4e18faebb2544_87513_1024x0_resize_box_2.png 1024w"
+				width="1121"
+				height="713"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure>
+<figure style="flex-grow: 94; flex-basis: 225px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-15.png" data-size="314x334"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-15.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-15_hu6a5313d9fae276125cef31a8f7892a99_26147_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-15_hu6a5313d9fae276125cef31a8f7892a99_26147_1024x0_resize_box_2.png 1024w"
+				width="314"
+				height="334"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure></p>
+<p>連線進去後就可以看到我用 Windows 的 Chrome 在操控我的 Mac 了</p>
+<p><figure style="flex-grow: 177; flex-basis: 426px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-16.png" data-size="1920x1080"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-16.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-16_hua111f7fe41dc48b043a51c97c73e00ac_1431739_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-16_hua111f7fe41dc48b043a51c97c73e00ac_1431739_1024x0_resize_box_2.png 1024w"
+				width="1920"
+				height="1080"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure></p>
+
+  
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-1990193713845546"
+       data-ad-slot="1983708858"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+<h2 id="設定允許連線到-windows-電腦">設定允許連線到 Windows 電腦</h2>
+<p>若我要允許 Windows 電腦也可以被其他電腦連線存取，一樣到 <a class="link" href="https://remotedesktop.google.com/access"  target="_blank" rel="noopener"
+    >Chrome 遠端桌面遠端存取頁籤</a>，點選右下角的下載藍色按鈕，安裝 Windows 版本的 <code>Chrome Remote Desktop Host</code> 就可以讓 Window 電腦也可以被其他電腦遠端連線 Debug</p>
+<p><figure style="flex-grow: 160; flex-basis: 384px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-17.png" data-size="1196x746"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-17.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-17_huce0c882d2d68f936a0347b91fa91f20b_99377_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-17_huce0c882d2d68f936a0347b91fa91f20b_99377_1024x0_resize_box_2.png 1024w"
+				width="1196"
+				height="746"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure>
+<figure style="flex-grow: 141; flex-basis: 340px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-18.png" data-size="931x657"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-18.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-18_hue2bb6c77563df6ede1beb0fa0dfc0c38_96522_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-18_hue2bb6c77563df6ede1beb0fa0dfc0c38_96522_1024x0_resize_box_2.png 1024w"
+				width="931"
+				height="657"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure></p>
+<p>安裝完成後，一樣輸入 Windows 電腦的名稱及連線的 <code>PIN 碼</code>，完成後就可以同時在瀏覽器看到 Mac 及 Windows 電腦都是允許被遠端連線存取的狀態了</p>
+<p><figure style="flex-grow: 141; flex-basis: 339px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-19.png" data-size="969x686"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-19.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-19_hu99a77c2244dc03aca5f2c0f4a0c1c30d_89292_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-19_hu99a77c2244dc03aca5f2c0f4a0c1c30d_89292_1024x0_resize_box_2.png 1024w"
+				width="969"
+				height="686"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure>
+<figure style="flex-grow: 129; flex-basis: 310px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-20.png" data-size="990x764"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-20.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-20_hu3c6a3cd2b3277ab3d1a176d0b07f55b5_157070_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-20_hu3c6a3cd2b3277ab3d1a176d0b07f55b5_157070_1024x0_resize_box_2.png 1024w"
+				width="990"
+				height="764"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure>
+<figure style="flex-grow: 166; flex-basis: 399px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-21.png" data-size="990x595"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-21.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-21_hu459a5676fb3443f1a5c88f4d4e4d6a8a_58319_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-21_hu459a5676fb3443f1a5c88f4d4e4d6a8a_58319_1024x0_resize_box_2.png 1024w"
+				width="990"
+				height="595"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure></p>
+<h2 id="使用-mac-連線到我的-windows-電腦">使用 Mac 連線到我的 Windows 電腦</h2>
+<p>當我打開我的 Mac 電腦，打開同樣帳號的瀏覽器，也可以同時看到我的 Windows 電腦也已經開啟準備讓我連線 Debug 了！</p>
+<p><figure style="flex-grow: 176; flex-basis: 423px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-22.png" data-size="1263x716"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-22.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-22_hubd5b9a2f94f0214a28ab649b7a888c36_51679_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-22_hubd5b9a2f94f0214a28ab649b7a888c36_51679_1024x0_resize_box_2.png 1024w"
+				width="1263"
+				height="716"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure>
+<figure style="flex-grow: 176; flex-basis: 423px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-23.png" data-size="1263x716"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-23.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-23_hubd5b9a2f94f0214a28ab649b7a888c36_57383_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-23_hubd5b9a2f94f0214a28ab649b7a888c36_57383_1024x0_resize_box_2.png 1024w"
+				width="1263"
+				height="716"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure></p>
+<p>當連線進去 Windows 電腦時，就可以看到 Windows 的 Chrome 以及剛剛設定的連線畫面了</p>
+<p><figure style="flex-grow: 185; flex-basis: 446px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-24.png" data-size="1270x683"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-24.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-24_hu1401fc667010fa8ea07843df7f81b436_110644_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-24_hu1401fc667010fa8ea07843df7f81b436_110644_1024x0_resize_box_2.png 1024w"
+				width="1270"
+				height="683"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure></p>
+<h2 id="讓朋友連線到我電腦-debug">讓朋友連線到我電腦 Debug</h2>
+<p>自己 Debug 自己電腦 De 不出個什麼毛，如果要讓朋友可以連線到你電腦進行 Debug 的話，點選 <a class="link" href="https://remotedesktop.google.com/support"  target="_blank" rel="noopener"
+    >Chrome 遠端桌面遠端支援的頁籤</a>，按下 <code>分享這個螢幕</code> 區塊的右下角的 <code>+ 產生存取碼</code></p>
+<blockquote>
+<p>這個存取碼是暫時的存取碼，允許朋友在一段時間內可以用這個存取碼連線到我電腦，而 <code>PIN 碼</code> 是自己連線到自己電腦用的存取碼，所以是不會變動的，但也只有自己的帳號才能用 PIN 碼連線到自己電腦</p>
+</blockquote>
+<p><figure style="flex-grow: 185; flex-basis: 446px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-25.png" data-size="1270x683"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-25.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-25_hu1401fc667010fa8ea07843df7f81b436_110461_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-25_hu1401fc667010fa8ea07843df7f81b436_110461_1024x0_resize_box_2.png 1024w"
+				width="1270"
+				height="683"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure>
+<figure style="flex-grow: 185; flex-basis: 446px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-26.png" data-size="1270x683"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-26.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-26_hu1401fc667010fa8ea07843df7f81b436_97443_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-26_hu1401fc667010fa8ea07843df7f81b436_97443_1024x0_resize_box_2.png 1024w"
+				width="1270"
+				height="683"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure></p>
+<h2 id="請朋友連線到我電腦-debug">請朋友連線到我電腦 Debug</h2>
+<p>將產生的存取碼給朋友，在 <a class="link" href="https://remotedesktop.google.com/support"  target="_blank" rel="noopener"
+    >Chrome 遠端桌面遠端支援的頁籤</a>下方的 <code>連線至另一部電腦</code> 區塊輸入你給他的存取碼就可以連線進行存取</p>
+<p><figure style="flex-grow: 204; flex-basis: 491px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-27.png" data-size="1920x937"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-27.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-27_hu5cd6ede19d5a1e80c8e53e2256523add_125088_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-27_hu5cd6ede19d5a1e80c8e53e2256523add_125088_1024x0_resize_box_2.png 1024w"
+				width="1920"
+				height="937"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure></p>
+<p>當你朋友連線當下，會跳出視窗詢問你是否允許你朋友動你電腦，點選 <code>Share</code> 按鈕即可開始分享你的電腦控制權給你朋友幫你 Debug 了</p>
+<p><figure style="flex-grow: 185; flex-basis: 446px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-28.png" data-size="1270x683"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-28.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-28_hu1401fc667010fa8ea07843df7f81b436_113738_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-28_hu1401fc667010fa8ea07843df7f81b436_113738_1024x0_resize_box_2.png 1024w"
+				width="1270"
+				height="683"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure>
+<figure style="flex-grow: 185; flex-basis: 446px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-29.png" data-size="1270x683"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-29.png"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-29_hu1401fc667010fa8ea07843df7f81b436_91101_480x0_resize_box_2.png 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-29_hu1401fc667010fa8ea07843df7f81b436_91101_1024x0_resize_box_2.png 1024w"
+				width="1270"
+				height="683"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure></p>
+
+  
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-1990193713845546"
+       data-ad-slot="1983708858"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+<h2 id="使用手機-chrome-remote-desktop-連線到我的電腦">使用手機 Chrome Remote Desktop 連線到我的電腦</h2>
+<p>Chrome 遠端桌面也有提供 <a class="link" href="https://apps.apple.com/us/app/chrome-remote-desktop/id944025852"  target="_blank" rel="noopener"
+    >‎iOS App</a> 及 <a class="link" href="https://play.google.com/store/apps/details?id=com.google.chromeremotedesktop"  target="_blank" rel="noopener"
+    >Android App</a> 可以讓你用手機就可以連線到自己的電腦</p>
+<p>下載後登入到自己有設定遠端桌面的帳號，連線後輸入 <code>PIN 碼</code> 就可以連線了，但整個手機上的操作體驗還是沒有很順，我用 iOS 的 App 沒辦法順利地用觸控或滑鼠的方式去控制電腦，很容易點錯或點了沒有作用，這個部分的體驗感覺是還要再加強一下</p>
+<p><figure style="flex-grow: 46; flex-basis: 110px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-30.jpg" data-size="828x1792"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-30.jpg"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-30_hu287ca547871d69de538c0aad75c5fd9d_140658_480x0_resize_q75_box.jpg 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-30_hu287ca547871d69de538c0aad75c5fd9d_140658_1024x0_resize_q75_box.jpg 1024w"
+				width="828"
+				height="1792"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure>
+<figure style="flex-grow: 46; flex-basis: 110px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-31.jpg" data-size="828x1792"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-31.jpg"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-31_hu5a7f345db2448aab9dd1f07954ff2f19_38297_480x0_resize_q75_box.jpg 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-31_hu5a7f345db2448aab9dd1f07954ff2f19_38297_1024x0_resize_q75_box.jpg 1024w"
+				width="828"
+				height="1792"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure>
+<figure style="flex-grow: 46; flex-basis: 110px">
+		<a href="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-32.jpg" data-size="828x1792"><img src="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-32.jpg"
+				srcset="/article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-32_huddb264ba26bad2e0e301778690a66158_93409_480x0_resize_q75_box.jpg 480w, /article/202105-google-chrome-remote-desktop-debug-friends-computer/images/chrome-remote-access-32_huddb264ba26bad2e0e301778690a66158_93409_1024x0_resize_q75_box.jpg 1024w"
+				width="828"
+				height="1792"
+				loading="lazy"
+				alt="Chrome 遠端桌面">
+		</a>
+		
+		<figcaption>Chrome 遠端桌面</figcaption>
+		
+	</figure></p>
+<h2 id="結語">結語</h2>
+<p>這樣就可以知道要怎麼用 Chrome 遠端桌面來幫朋友或幫自己電腦連線 Debug 了，提供了一個不錯的選項可以讓大家選擇，有興趣的人可以下載來玩看看</p>
+<h2 id="參考資料">參考資料</h2>
+<ul>
+<li><a class="link" href="https://remotedesktop.google.com/"  target="_blank" rel="noopener"
+    >Chrome 遠端桌面</a></li>
+<li><a class="link" href="https://chrome.google.com/webstore/detail/chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai"  target="_blank" rel="noopener"
+    >Chrome Remote Desktop - Chrome 線上應用程式商店</a></li>
+<li><a class="link" href="https://support.google.com/chrome/answer/1649523?co=GENIE.Platform%3DDesktop&amp;hl=zh-Hant"  target="_blank" rel="noopener"
+    >透過 Chrome 遠端桌面存取其他電腦 - 電腦 - Google Chrome說明</a></li>
+<li><a class="link" href="https://remotedesktop.google.com/access"  target="_blank" rel="noopener"
+    >Chrome 遠端桌面 - 遠端存取</a></li>
+<li><a class="link" href="https://remotedesktop.google.com/support"  target="_blank" rel="noopener"
+    >Chrome 遠端桌面 - 遠端支援</a></li>
+<li><a class="link" href="https://apps.apple.com/us/app/chrome-remote-desktop/id944025852"  target="_blank" rel="noopener"
+    >‎Chrome Remote Desktop on the App Store</a></li>
+<li><a class="link" href="https://play.google.com/store/apps/details?id=com.google.chromeremotedesktop"  target="_blank" rel="noopener"
+    >Chrome Remote Desktop - Apps on Google Play</a></li>
+</ul>
+
+
+  
+  
+
+  
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-1990193713845546"
+       data-ad-slot="8247872484"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+
+
+  
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-1990193713845546"
+       data-ad-slot="3237080773"></ins>
+
+
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E9%81%A0%E7%AB%AF%E6%A1%8C%E9%9D%A2/">遠端桌面</a>
+        
+            <a href="/tags/remote-desktop/">Remote Desktop</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+     
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "kj-murmur" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2021 KJ Murmur 喃語
+    </section>
+    
+    <section class="powerby">
+        
+            All rights reserved，未經允許不得隨意轉載 <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
